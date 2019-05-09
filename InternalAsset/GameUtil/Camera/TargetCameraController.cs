@@ -49,18 +49,6 @@ namespace Game.Library.Camera
         [ SerializeField ]
         private float distance = 1.0f;
 
-        /// <summary>
-        /// 上下の角度制限です
-        /// </summary>
-        [ SerializeField ]
-        private float verticalRestrictDegree = 50.0f;
-
-        /// <summary>
-        /// カメラの回転感度です
-        /// </summary>
-        [ SerializeField ]
-        private float sensitivity = 5.0f;
-
         #endregion
 
 

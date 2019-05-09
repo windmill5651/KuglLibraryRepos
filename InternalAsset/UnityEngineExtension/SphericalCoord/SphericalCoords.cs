@@ -78,8 +78,6 @@ namespace UnityENgine.Extensions
         public static SphericalVector3 GetSphericalPositionFromCartesianCoord( Vector3 cartesian )
         {
             var radius = Mathf.Sqrt( ( cartesian.x * cartesian.x ) + ( cartesian.y * cartesian.y ) + ( cartesian.z * cartesian.z ) );
-            var sinPhi = Mathf.Clamp( cartesian.y, -1, 1 );
-
             var phi = Mathf.Asin( cartesian.y / radius );
             var theta = Mathf.Atan2( cartesian.x, cartesian.z );
 
